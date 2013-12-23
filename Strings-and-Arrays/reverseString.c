@@ -51,7 +51,7 @@ printf("\n<Reversed:> \n%s",s);
 
 reverseString(s);
 
-printf("\n<Reversed again (should match original string):> \n%s ",s);
+printf("\n<Reversed again (should match original string):> \n%s",s);
 
 return 0;
 
