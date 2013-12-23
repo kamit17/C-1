@@ -25,11 +25,11 @@ return 1;
 
 int reverseString(char *s){
 
-int length;
+	int length;
 
-length = strlen(s);
+	length = strlen(s);
 
-int counter_head=0,counter_tail=length-1;
+	int counter_head=0,counter_tail=length-1;
 
 while(counter_head<counter_tail){
 	swapC(s,counter_head,counter_tail);
