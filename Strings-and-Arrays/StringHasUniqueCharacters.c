@@ -1,6 +1,6 @@
 /*
 *	Finding out if a string has unique characters in it or not
-*	1. If the string length is larger than 256 Characters, It cannot
+*	1. If the string length is larger than 256 Characters, It cannot have
 *	   unique characters
 *	2. a. Compare every character with the rest of the characters
 *		O(n^2)
