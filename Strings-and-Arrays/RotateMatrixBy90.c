@@ -23,23 +23,28 @@ int main(){
 	i=0;
 	j=0;
 
-	
+	int temp_buffer;	
+
 	// Rotate the Matrix
 	while(i < rows/2){
 		j=i;
-		while(j<columns-i){
-			printf("%d ",m1[i][j]);	
+		while(j < columns-i-1){
+			temp_buffer = m1[complement(j,rows)][i];
+			m1[complement(j,rows)][i] = m1[complement(i,rows)][complement(j,rows)];
+			m1[complement(i,rows)][complement(j,rows)]=m1[j][complement(i,rows)];
+			m1[j][complement(i,rows)]=m1[i][j];
+			m1[i][j]=temp_buffer;	
+
 			j++;
 		}
 		i++;
 	}
 	
-	printf("\nChosen over\n");
-
 	i=0;
 	j=0;
 	
 	// Display the Matrix
+
 	while(i<rows){
 		while(j<columns){
 			printf("%d\t",m1[i][j]);
