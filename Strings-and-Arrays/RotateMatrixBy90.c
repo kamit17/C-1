@@ -1,3 +1,7 @@
+/*
+*	Assume the matrix is n x n (square matrix)
+*/
+
 #include<stdio.h>
 
 int complement(int n, int base){
