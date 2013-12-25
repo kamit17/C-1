@@ -1,16 +1,20 @@
 /*
 *	Assume the matrix is n x n (square matrix)
+*	Matrix size set at run time (runtime arguments) by user
+*		./RotateMatrixBy90 <size> 
 */
 
 #include<stdio.h>
+#include<stdlib.h>
 
 int complement(int n, int base){
 	return base-1-n;
 }
 
-int main(){
-	const int rows=5;
-	const int columns=5;
+int main(int argc, char **argv){
+	
+	const int rows=atoi(argv[1]);
+	const int columns=atoi(argv[1]);
 	int m1[rows][columns];
 	int i=0,j=0,n=0;
 	
