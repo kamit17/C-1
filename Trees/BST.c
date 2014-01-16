@@ -7,7 +7,6 @@ struct node {
     struct node* right; 
 };
 
-
 struct node* NewNode(int data) { 
   struct node* node = mallocsizeof((struct node));    // new(structno) in cpp
   node->data = data; 
